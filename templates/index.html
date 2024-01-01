@@ -44,6 +44,9 @@
 	.rain-card{
 		margin-left: 535px;
 	}
+	h5{
+		text-align: center;
+	}
 	
 	</style>
 
@@ -98,7 +101,7 @@
 				<div class="card custom-card">
 					<img src="{{url_for('static', filename='phosphurus.jpg')}}" class="card-img-top" alt="Phosphorus Image">
 					<div class="card-body">
-						<label for="Phosporus" class="form-label">Phosphorus</label>
+						<h5 class="card-title">Phosphorus</h5>
 						<input type="number" id="Phosporus" name="Phosporus" placeholder="Enter Phosphorus" class="form-control" required step="00">
 					</div>
 				</div>
@@ -107,7 +110,7 @@
 				<div class="card custom-card">
 					<img src="{{url_for('static', filename='potassium.jpg')}}" class="card-img-top" alt="Potassium Image">
 					<div class="card-body">
-						<label for="Potassium" class="form-label">Potassium</label>
+						<h5 class="card-title">Potassium</h5>
 						<input type="number" id="Potassium" name="Potassium" placeholder="Enter Potassium" class="form-control" required step="0">
 					</div>
 				</div>
@@ -120,8 +123,8 @@
 				<div class="card bg-dark custom-card">
 					<img src="{{url_for('static', filename='temperature.jpg')}}" class="card-img-top" alt="Nitrogen Image">
 					<div class="card-body">
-						<label for="Temperature">Temperature</label>
-					<input type="number" step="0.01" id="Temperature" name="Temperature" placeholder="Enter Temperature in °C" class="form-control" required step="0">
+						<h5 class="card-title">Temperature</h5>
+					<input type="text" step="0.01" id="Temperature" name="Temperature" placeholder="Enter Temperature in °C" class="form-control" required step="0">
 					</div>
 				</div>
 			</div>
@@ -129,8 +132,8 @@
 				<div class="card custom-card">
 					<img src="{{url_for('static', filename='humditiy.jpg')}}" class="card-img-top" alt="Phosphorus Image">
 					<div class="card-body">
-						<label for="Humidity">Humidity</label>
-					<input type="number" step="0.01" id="Humidity" name="Humidity" placeholder="Enter Humidity in %" class="form-control" required step="0">
+						<h5 class="card-title">Humidity</h5>
+					<input type="text" step="any" id="Humidity" name="Humidity" placeholder="Enter Humidity in %" class="form-control" required step="0">
 					</div>
 				</div>
 			</div>
@@ -138,8 +141,8 @@
 				<div class="card custom-card">
 					<img src="{{url_for('static', filename='ph.jpg')}}" class="card-img-top" alt="Potassium Image">
 					<div class="card-body">
-						<label for="pH">pH</label>
-					<input type="number" step="0.01" id="Ph" name="Ph" placeholder="Enter pH value" class="form-control" required step="0">
+						<h5 class="card-title">PH</h5>
+					<input type="text" step="0.01" id="Ph" name="Ph" placeholder="Enter pH value" class="form-control" required step="0">
 					</div>
 				</div>
 			</div>
@@ -150,8 +153,8 @@
 				<div class="card custom-card rain-card">
 					<img src="{{url_for('static', filename='rainfall.jpg')}}" class="card-img-top" alt="Potassium Image">
 					<div class="card-body">
-						<label for="Rainfall">Rainfall</label>
-					<input type="number" step="0.01" id="Rainfall" name="Rainfall" placeholder="Enter Rainfall in mm" class="form-control" required>
+						<h5 class="card-title">Rainfall</h5>
+					<input type="text" step="0.01" id="Rainfall" name="Rainfall" placeholder="Enter Rainfall in mm" class="form-control" required step="0">
 					</div>
 				</div>
 			</div>
